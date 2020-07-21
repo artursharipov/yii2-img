@@ -1,0 +1,32 @@
+{
+    "name": "artursharipov/img",
+    "description": "Img upload + sortable",
+    "type": "yii2-extension",
+    "keywords": [
+      "yii2",
+      "img",
+      "sortable"
+    ],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Artur Sharipov",
+        "email": "artursh0099@mail.ru",
+        "homepage": "https://github.com/artursharipov/yii2-img",
+        "role": "Developer"
+      }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "yiisoft/yii2": "~2.0.0"
+    },
+    "extra": {
+      "bootstrap": "artursharipov\\img\\Bootstrap"
+    },
+    "autoload": {
+      "psr-4": {
+        "artursharipov\\img\\": "src"
+      }
+    }
+  }
+  
