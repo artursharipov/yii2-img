@@ -44,8 +44,6 @@ Yii::setAlias('@www', dirname(dirname(dirname(__DIR__))) . '/public_html');
 
 ```
 
-```
-
 В вид (добавление галереи):
 
 ```php
