@@ -17,7 +17,7 @@ $( function(){
             
             $.ajax({
                 dataType: "json",
-                url: "/img/image/sort",
+                url: "/admin/img/image/sort",
                 type: "POST",
                 data: {data: data},
                 success: function(res){
@@ -35,7 +35,7 @@ $( function(){
         var model = this
 
         $.ajax({
-            url: "/img/image/remove",
+            url: "/admin/img/image/remove",
             type: "POST",
             data: {id: id},
             success: function(res){

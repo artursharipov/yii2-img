@@ -34,6 +34,15 @@ public function behaviors()
         ],
     ];
 }
+```
+
+Добавить алиас в common\config\bootstrap.php
+
+```php
+
+Yii::setAlias('@www', dirname(dirname(dirname(__DIR__))) . '/public_html');
+
+```
 
 ```
 
@@ -71,10 +80,10 @@ ActiveForm::end();
 ```php
 
 //get all images for model
-$model->imgGallery
+$model->imgGallery;
 
 //get one images for model
-$model->imgMain
+$model->imgMain;
 ```
 
 

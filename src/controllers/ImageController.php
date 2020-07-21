@@ -5,9 +5,26 @@ use yii\helpers\Json;
 use artursharipov\img\models\Img;
 use Yii;
 use yii\web\Controller;
+use yii\filters\AccessControl;
 
 class ImageController extends Controller
 {
+    public $enableCsrfValidation = false;
+
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
 
     //sorting images in admin panel
     public function actionSort()

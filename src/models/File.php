@@ -13,7 +13,7 @@ class File
     //image
 	public static function uploadImage($file, $url, $hash, $isMain = null)
 	{
-        $path = Yii::getAlias('@webroot');
+        $path = Yii::getAlias('@www');
 
         $src = self::createSrc($file, $url);
 
@@ -47,7 +47,7 @@ class File
     //delete file
     public static function unlinkFile($src)
     {
-        $file = Yii::getAlias('@webroot') . $src;
+        $file = Yii::getAlias('@www') . $src;
 
         if(file_exists($file)){
             @unlink($file);
