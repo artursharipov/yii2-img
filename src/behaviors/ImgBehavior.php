@@ -28,7 +28,7 @@ class ImgBehavior extends Behavior
     public function afterSave()
     {
         if($file = UploadedFile::getInstance($this->owner, 'new_img')){
-           File::uploadImage($file, $this->folder_image, $this->owner->hash, true);
+           File::uploadImage($file, $this->folder_image, $this->owner->hash, 1);
         }
     
         if($files = UploadedFile::getInstances($this->owner, 'new_imgs')){
