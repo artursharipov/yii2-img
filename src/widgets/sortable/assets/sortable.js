@@ -35,7 +35,7 @@ $( function(){
         var model = this
 
         $.ajax({
-            url: "/admin/img/image/remove",
+            url: "/img/image/remove",
             type: "POST",
             data: {id: id},
             success: function(res){
