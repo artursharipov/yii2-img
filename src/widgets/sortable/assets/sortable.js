@@ -17,7 +17,7 @@ $( function(){
             
             $.ajax({
                 dataType: "json",
-                url: "/admin/img/image/sort",
+                url: "/img/image/sort",
                 type: "POST",
                 data: {data: data},
                 success: function(res){
